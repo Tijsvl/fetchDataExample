@@ -1,0 +1,63 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  font-family: sans-serif;
+  cursor: default;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+table {
+  margin: 5rem;
+  border-collapse: collapse;
+  background: #fff;
+  border: 2px solid #000;
+  box-shadow: 0 0 50px #0004;
+}
+
+table th,
+table td {
+  padding: 0.5em 0.75em;
+  border: 1px solid #000;
+  text-align: start;
+}
+
+table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+table tbody tr:hover {
+  background-color: #eee;
+  transition: background-color 0.5s ease;
+}
+
+table tbody tr img {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  transition: scale 0.15s ease;
+}
+
+table tbody tr:hover img {
+  scale: 1.2;
+  transition: scale 0.5s ease;
+}
